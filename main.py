@@ -1,4 +1,4 @@
-import pygame, sys, random
+import pygame, sys, random, time
 
 pygame.init()
 
@@ -27,6 +27,8 @@ ball = pygame.Rect(0, 0, 20, 20)
 ball.center = (WIDTH/2, HEIGHT/2)
 
 x_speed, y_speed = 1, 1
+
+time.sleep(2)
 
 while True:
     keys_pressed = pygame.key.get_pressed()
@@ -82,3 +84,5 @@ while True:
 
     pygame.display.update()
     CLOCK.tick(300)
+
+    
